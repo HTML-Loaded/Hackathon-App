@@ -6,16 +6,36 @@
     <title>navbar</title>
 </head>
 <body>
-            <div class="navbar">
-            <ul>
-            <li><a href="">Link 1</a></li>
-            <li><a href="">Link 2</a></li>
-            <li><a href="">Link 3</a></li>
-            <li><a href="">Link 4</a></li>
-            <li><a href="">Link 5</a></li>
-            <li><a id="button">button</a></li>
-            <li><a id="2button">button</a></li>
-            </ul>
-        </div>
+    <div class="navbar">
+    <ul class="navbar-group">
+        <li><a href="/home">Home</a></li>
+        <li><a href="">Link 2</a></li>
+        <li><a href="">Link 3</a></li>
+        <li><a href="">Link 4</a></li>
+        <li><a id="button">Button</a></li>
+    </ul>
+
+    <ul class="navbar-group">
+        <% if (currentUser) { %>
+            <li>
+                <form action="/logout" method="POST">
+                    <button type="submit">Logout</button>
+                </form>
+            </li>
+            <li>
+                <a href="/user" class="navbar-profile">
+                    <img
+                        src="<%= currentUser.profilePicture || '/images/default-profile.png' %>"
+                        alt="Profile"
+                        class="navbar-profile-image"
+                    >
+                </a>
+            </li>
+        <% } else { %>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/signup">Sign Up</a></li>
+        <% } %>
+    </ul>
+</div>
 </body>
 </html>
