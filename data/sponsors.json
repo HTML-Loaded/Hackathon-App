@@ -1,18 +1,10 @@
 [
     {
         "id": 1,
-        "name": "asdf",
-        "email": "a@a",
-        "organization": "asdfas",
-        "body": "asdfasf",
-        "status": false
-    },
-    {
-        "id": 2,
-        "name": "asdf",
-        "email": "a@a",
-        "organization": "asdfas",
-        "body": "asdfasf",
+        "name": "Example Sponsor",
+        "email": "sponsor@example.com",
+        "organization": "RGV Technologies",
+        "body": "We would like to sponsor the hackathon.",
         "status": false
     }
 ]

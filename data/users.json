@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "teamId": 0,
+        "profilePicture": "/images/default-profile.png",
+        "name": "John Smith",
+        "email": "john@example.com",
+        "password": "$2b$10$wN9JR1rAAR9N2w8s3xqlQeObAiM7CMTjFgup6N3P.WmYebIOPI7/i",
+        "role": "p",
+        "skills": [
+            "JavaScript",
+            "Python"
+        ],
+        "description": ""
+    },
+    {
+        "id": 2,
+        "teamId": 0,
+        "profilePicture": "/images/default-profile.png",
+        "name": "Jane Doe",
+        "email": "jane@example.com",
+        "password": "$2b$10$waXxU91WS8hkcfrTq2JHnelaomduLg9Mcz5eJ3G.AV67uIZbmdJVu",
+        "role": "participant",
+        "skills": [
+            "HTML",
+            "CSS"
+        ],
+        "description": ""
+    }
+]
