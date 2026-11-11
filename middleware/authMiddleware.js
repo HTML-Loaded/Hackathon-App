@@ -1,5 +1,6 @@
 import { findUserById } from "../services/userService.js"
 
+// Checks if there is a valid session
 export const requireAuth = async (req, res, next) => {
     try {
 
@@ -30,4 +31,23 @@ export const requireAdmin = (req, res, next) => {
     }
 
     next()
+}
+// Set currentUser to contain user information for ejs rendering
+export const loadCurrentUser = async (req, res, next) => {
+    try {
+        res.locals.currentUser = null
+
+        if (req.session.userId) {
+            const user = await findUserById(req.session.userId)
+
+            if (user) {
+                res.locals.currentUser = user
+            }
+        }
+
+        next()
+    }
+    catch (error) {
+        next(error)
+    }
 }

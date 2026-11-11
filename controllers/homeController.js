@@ -1,9 +1,9 @@
 import { createApplication } from "../services/sponsorService.js"
-
+// Render home.ejs
 export const getHome = (req, res) => {
     res.render("home")
 }
-
+// 'Submit' a sponsor application
 export const submitSponsor = async (req, res, next) => {
     try {
         const { name, email, company, message } = req.body
