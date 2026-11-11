@@ -1,5 +1,6 @@
 import express from "express";
 import homeRouter from "./routes/homeRoutes.js";
+import authRouter from "./routes/authRoutes.js"
 import path from "node:path"
 
 const app = express()
@@ -11,6 +12,8 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }));
 
 app.use('/home', homeRouter)
+
+app.use('authentication', authRouter)
 
 app.listen(port, () => {
     console.log(`server running at http://localhost:${port}/home`);
