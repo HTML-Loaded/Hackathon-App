@@ -1,0 +1,112 @@
+/* Base and typography */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+html {
+    background: #D2D2C8;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    background: #D2D2C8;
+    color: #231942;
+    font: 16px/1.65 Tahoma, sans-serif;
+}
+h1 {
+    font-family: Arial, sans-serif;
+    font-style: italic;
+}
+h2, h3, h4 {
+    line-height: 1.25;
+}
+h2 {
+    color: #212A31;
+}
+h3 {
+    color: #7C3E2E;
+}
+h4 {
+    color: #69532C;
+}
+p {
+    margin: 0 0 1rem;
+}
+a {
+    color: #7C3E2E;
+}
+a:hover {
+    color: #69532C;
+}
+button, input, textarea {
+    font: inherit;
+}
+button {
+    cursor: pointer;
+}
+button, .btn, .header-button {
+    border: 1px solid #212A31;
+    border-radius: 5px;
+    background: #8d3a25bd;
+    color: #212A31;
+    padding: 10px 18px;
+    text-decoration: none;
+    transition: background-color .2s ease, transform .2s ease;
+}
+button:hover, .btn:hover, .header-button:hover {
+    background: #b46a50;
+    transform: translateY(-2px);
+}
+button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible {
+    outline: 2px solid #7C3E2E;
+    outline-offset: 3px;
+}
+#main-title {
+    font-size: 48px;
+    color: #7C3E2E;
+}
+
+.section {
+    width: min(1100px, calc(100% - 48px));
+    margin: 0 auto;
+    padding: 92px 0;
+}
+.section + .section {
+    border-top: 1px solid rgba(33,42,49,.13);
+}
+.section h2 {
+    margin: 0 0 22px;
+}
+.section h3 {
+    margin: 28px 0 10px;
+}
+.section ul {
+    padding-left: 24px;
+}
+.section li {
+    margin-bottom: 10px;
+}
+.section-desc {
+    max-width: 650px;
+    line-height: 1.8;
+}
+.title {
+    font-size: clamp(30px, 4vw, 48px);
+    letter-spacing: -.035em;
+}
+.hl {
+    color: #7C3E2E;
+}
+.eyebrow {
+    color: #7C3E2E;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+/* Existing reveal classes: no hidden state without a matching script */
+.reveal {
+    opacity: 1;
+    transform: none;
+}

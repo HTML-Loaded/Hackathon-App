@@ -1,0 +1,199 @@
+/* Shared layout and section rhythm */
+#home {
+    width: 100%;
+}
+
+/* About organization and event */
+.about-section {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+#about-org, #about-event {
+    min-width: 0;
+}
+
+#about-org > h2, #about-event > h2 {
+    font-size: clamp(28px, 3vw, 38px);
+}
+
+#about-org li b, #about-event li b {
+    color: #7C3E2E;
+}
+
+/* Event details */
+#event-details {
+    margin-top: 38px;
+    padding: 28px;
+    border: 1px solid #b6aca0;
+    border-radius: 12px;
+    background: #E6E3DA;
+}
+
+#event-details h2 {
+    margin-bottom: 22px;
+}
+
+#event-details h3 {
+    margin: 18px 0 4px;
+}
+
+#event-details p {
+    margin-bottom: 12px;
+}
+
+/* Details and terminal side by side */
+.event-details-row {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: stretch;
+}
+
+.event-info {
+    flex: 1;
+    min-width: 0;
+}
+
+#terminal {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Prizes below details and terminal */
+#prize-list {
+    margin-top: 30px;
+}
+
+/* Map */
+.map-section {
+    padding-top: 32px;
+    padding-bottom: 92px;
+}
+#gmaps-embed {
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid #b6aca0;
+}
+#gmaps-embed a {
+    display: block;
+}
+#gmaps-embed iframe {
+    display: block;
+    width: 100%;
+    height: 340px;
+    border: 0;
+    pointer-events: none;
+}
+
+/* Donation: centered like TripleH, using the RGV palette */
+.donate-section {
+    text-align: center;
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+.donate-section .section-head {
+    max-width: 760px;
+    margin: 0 auto 30px;
+}
+.donate-section .section-desc {
+    margin: 0 auto;
+}
+.donate-section .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 15px 28px;
+    font-weight: 700;
+}
+.btn svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+/* Sponsor: text and form side by side, unified panel */
+#sponsor {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+.sponsor-panel {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 52px;
+    align-items: start;
+    padding: clamp(28px, 5vw, 60px);
+    background: #E6E3DA;
+    border: 1px solid #b6aca0;
+    border-radius: 16px;
+}
+.sponsor-panel .section-desc {
+    margin-bottom: 28px;
+}
+.sponsor-perks {
+    display: grid;
+    gap: 16px;
+}
+.sponsor-perk {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    line-height: 1.55;
+}
+.sponsor-perk span {
+    color: #7C3E2E;
+    font-weight: 700;
+    font-size: 13px;
+    flex: 0 0 auto;
+}
+.sponsor-form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+.sponsor-field {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    gap: 7px;
+}
+.sponsor-field.full, .sponsor-submit, .sponsor-note {
+    grid-column: 1 / -1;
+}
+.sponsor-field label {
+    font-weight: 700;
+    font-size: 13px;
+    color: #212A31;
+}
+.sponsor-field input, .sponsor-field textarea {
+    width: 100%;
+    min-width: 0;
+    padding: 12px 13px;
+    background: #D2D2C8;
+    color: #231942;
+    border: 1px solid #b6aca0;
+    border-radius: 6px;
+}
+.sponsor-field textarea {
+    min-height: 145px;
+    resize: vertical;
+}
+.sponsor-submit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 4px 0 0;
+    padding: 14px 18px;
+    font-weight: 700;
+}
+.sponsor-note {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.6;
+}
+.sponsor-note a {
+    color: #7C3E2E;
+}
