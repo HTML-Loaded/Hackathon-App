@@ -7,6 +7,7 @@
     <title>User Profile | RGV Hackathon</title>
     <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="/css/user.css">
+    <link rel="stylesheet" href="/css/partials.css">
 </head>
 <body>
     <%- include("./partials/navbar.ejs") %>
@@ -17,7 +18,7 @@
             <div class="user-header">
                 <img
                     class="user-image"
-                    src="<%= locals.user.imageUrl || '/images/default-profile.png' %>"
+                    src="<%= locals.user.profilePicture || '/images/default-profile.png' %>"
                     alt="Profile picture"
                 >
 

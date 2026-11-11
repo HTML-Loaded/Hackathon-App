@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/user.css">
+    <link rel="stylesheet" href="/css/partials.css">
+</head>
+<body>
+    <%- include("partials/navbar") %>
+
+    <main class="edit-profile">
+        <h1>Edit Profile</h1>
+
+        <form action="/user/edit" method="POST">
+            <label for="name">Name</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                value="<%= locals.user.name %>"
+                required
+            >
+
+            <label for="description">Description</label>
+            <textarea
+                id="description"
+                name="description"
+            ><%= locals.user.description || "" %></textarea>
+
+            <label for="skills">Skills (comma separated)</label>
+            <input
+                type="text"
+                id="skills"
+                name="skills"
+                value="<%= (locals.user.skills || []).join(', ') %>"
+            >
+
+            <button type="submit">Save Changes</button>
+            <a href="/user">Cancel</a>
+        </form>
+    </main>
+</body>
+</html>

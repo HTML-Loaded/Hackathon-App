@@ -7,38 +7,105 @@
 </head>
 <!-- should have sponsors here -->
 <body>
-    <footer>
-        <div class="wrapper">
-            <div class="foot-col colz">
-                <div class="logo">
-                    <img alt="logo" src="_files/images-2022/logo.svg">
-                </div>
-                <ul class="policy-links">
+    
+<footer class="site-footer">
+    <div class="wrapper">
 
-                </ul>
-                <ul class="dir-links">
-                    <li><a href="site-policies/web-accessibility/index.htm">Web Accessibility</a></li>
-                    <li><a href="about/contact/index.htm">Contact us</a></li>
-                </ul>
-                <ul class="social-icons">
-                    <li><a href="https://www.facebook.com/" title="Visit us on Facebook"><img alt="Facebook" src="_files/images-2022/icon-facebook.svg"></a></li>
-                    <li><a href="https://x.com/" title="Get the latest info about us on X"><img alt="X Twitter" src="_files/images-2022/icon-x.svg"></a></li>
-                    <li><a href="https://www.instagram.com/" title="Connect with us on Instagram"><img alt="Instagram" src="_files/images-2022/icon-instagram.svg"></a></li>
-                    <li><a href="https://www.discord.com/" title="Join our Discord"><img alt="Discord" src=""></a></li>
-                </ul>
+        <!-- Hackathon Information -->
+        <div class="foot-col">
+            <div class="logo">
+                <a href="/home">
+                    <img src="/images/palm.png" alt="RGV Hackathon Logo">
+                </a>
             </div>
-            <div class="foot-col block">
-                <div class="foot-links"><!--<p>More For</p>-->
-                    <ul>
-                        <li><a href="">Resources</a></li>
-                        <li><a href="">Resources</a></li>
-                        <li><a href="">Careers</a></li>
-                        <li><a href="" title="Go to Visit Campus web page"></a></li>
-                        <li><a href="">Directory</a></li>
-                    </ul>
-                </div>
-            </div>
+
+            <h3>RGV Hackathon</h3>
+            <p>
+                Bringing developers, designers, and innovators
+                together in the Rio Grande Valley.
+            </p>
+
+            <p class="copyright">
+                &copy; <%= new Date().getFullYear() %> RGV Hackathon.
+                All rights reserved.
+            </p>
         </div>
-    </footer>
+
+        <!-- Site Navigation -->
+        <div class="foot-col">
+            <h3>Explore</h3>
+
+            <ul class="foot-links">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/home#about">About the Hackathon</a></li>
+                <li><a href="/events">Event Schedule</a></li>
+                <li><a href="/home">FAQ</a></li>
+                <li><a href="/user">My Profile</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact and Sponsorship -->
+        <div class="foot-col">
+            <h3>Get Involved</h3>
+
+            <ul class="foot-links">
+                <li><a href="/contact">Contact Us</a></li>
+                <li><a href="/home#sponsor">Become a Sponsor</a></li>
+                <li><a href="/home#teams">Join a Team</a></li>
+                <li><a href="#">Volunteer</a></li>
+                <li><a href="#">Resources</a></li>
+            </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div class="foot-col">
+            <h3>Follow Us</h3>
+
+            <ul class="social-icons">
+                <li>
+                    <a href="https://www.facebook.com/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       title="Facebook">
+                        <img src="/images/icon-facebook.svg"
+                             alt="Facebook">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://x.com/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       title="X">
+                        <img src="/images/icon-x.svg"
+                             alt="X">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.instagram.com/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       title="Instagram">
+                        <img src="/images/icon-instagram.svg"
+                             alt="Instagram">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://discord.com/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       title="Discord">
+                        <img src="/images/icon-discord.svg"
+                             alt="Discord">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</footer>
+
 </body>
 </html>

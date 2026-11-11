@@ -10,7 +10,7 @@ export const seedData = async () => {
                 name: "John Smith",
                 email: "john@example.com",
                 password: await bcrypt.hash("password123", 10),
-                role: "p",
+                roles: "p",
                 skills: ["JavaScript", "Python"],
                 description: ""
             },
@@ -21,7 +21,7 @@ export const seedData = async () => {
                 name: "Jane Doe",
                 email: "jane@example.com",
                 password: await bcrypt.hash("password456", 10),
-                role: "participant",
+                roles: "participant",
                 skills: ["HTML", "CSS"],
                 description: ""
             }

@@ -1,0 +1,139 @@
+/*** User Profile ***/
+
+#user-profile {
+    display: flex;
+    justify-content: center;
+    padding: 110px 20px 60px;
+    min-height: 80vh;
+    box-sizing: border-box;
+}
+
+.user-panel {
+    width: 100%;
+    max-width: 700px;
+    height: fit-content;
+    padding: 30px;
+    background: #E6E3DA;
+    border: 1px solid #69532C;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/*** Profile Header ***/
+
+.user-header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #b6aca0;
+}
+
+.user-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #7C3E2E;
+    flex-shrink: 0;
+}
+
+.user-heading h2 {
+    margin: 0 0 10px;
+    color: #212A31;
+    font-size: 28px;
+}
+
+.user-heading p {
+    margin: 0;
+    color: #69532C;
+}
+
+/*** Profile Details ***/
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-top: 25px;
+}
+
+.user-field h3 {
+    margin: 0 0 10px;
+    color: #7C3E2E;
+    font-size: 19px;
+}
+
+.user-field p {
+    margin: 0;
+    color: #212A31;
+    line-height: 1.6;
+}
+
+.user-description {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+/*** Edit Profile Button ***/
+
+.user-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #b6aca0;
+}
+
+.user-edit-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #7C3E2E;
+    color: #E6E3DA;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.user-edit-btn:hover {
+    background: #69532C;
+}
+
+/*Edit User Profile */
+
+.edit-profile {
+    max-width: 600px;
+    margin: 100px auto 40px;
+    padding: 30px;
+    background: #E6E3DA;
+    border: 1px solid #69532C;
+    border-radius: 10px;
+}
+
+.edit-profile form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.edit-profile input,
+.edit-profile textarea {
+    padding: 10px;
+    border: 1px solid #69532C;
+    border-radius: 5px;
+    font: inherit;
+}
+
+.edit-profile textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.edit-profile button {
+    background: #7C3E2E;
+    color: #E6E3DA;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -5,8 +5,8 @@
         "profilePicture": "/images/default-profile.png",
         "name": "John Smith",
         "email": "john@example.com",
-        "password": "$2b$10$W7yL4wgjq5u/hwm7AVXhku0rBzY/zMGAf0ibbxDmF2qapuikQtW1C",
-        "role": "p",
+        "password": "$2b$10$2a9qTAv2NWwY9WJteqJEnOCqXj83oIWrk5KqxuB984U4EjDkIbgk.",
+        "roles": "p",
         "skills": [
             "JavaScript",
             "Python"
@@ -19,8 +19,8 @@
         "profilePicture": "/images/default-profile.png",
         "name": "Jane Doe",
         "email": "jane@example.com",
-        "password": "$2b$10$I5ArZAGEUgXzZ.jFqD39XeAPpDCT./DDwDtACd8bSIB0Ve770vZ6a",
-        "role": "participant",
+        "password": "$2b$10$wtMXvdcdLDWUqFA3EbhmEuqPDZ7aEpCM5GHLXFtRPGfg0I2UandJK",
+        "roles": "participant",
         "skills": [
             "HTML",
             "CSS"
