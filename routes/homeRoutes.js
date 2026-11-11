@@ -1,5 +1,6 @@
 import express from "express"
 import Router from "express"
+import path from "node:path"
 
 const router = Router()
 router.set('view engine', 'ejs')
@@ -11,11 +12,11 @@ router.use((req, res, next) => {
 })
 
 // serve the homepage
-router.route
-    .get("/", (req, res) => {
-        res.render("home.ejs").status(200)
+router.route("/")
+    .get((req, res) => {
+        res.render("home.ejs")
     })
-    .post("/", (req, res) => {
+    .post((req, res) => {
         res.status(200())
     })
 

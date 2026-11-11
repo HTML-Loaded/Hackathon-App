@@ -6,8 +6,150 @@
     <title>home</title>
 </head>
 <body>
-    <%- inclue("./partials/header.ejs") %>
-    <h1>home</h1>
-    <%- inclue("./partials/footer.ejs") %>
+    <%- include("./partials/navbar.ejs") %>
+    <%- include("./partials/header.ejs") %>
+    <div id="about">
+        <div id="about-org">
+            <h2>About Us</h2>
+            <p></p>
+            <br>
+            <p></p>
+            <h3>What we value</h3>
+            <ul>
+                <li> <b id="b1">Bullet 1:</b> <i>Team-based collaboration</i></li>
+                <li> <b id="b2">Bullet 2:</b> <i>Workshops and Technical Guidance</i></li>
+                <li> <b id="b3">Bullet 3:</b> <i>Networking Opportunities</i></li>
+            </ul>
+        </div>
+
+        <div id="about-event">
+            <h2>About the Event</h2>
+            <p>Join us for an exciting hackathon where creativity, technology, and collaboration come together to turn ideas into innovative solutions. Participants will work individually or in teams to brainstorm, build, and present projects that address real-world challenges.</p>
+            <br>
+            <p>Whether you're an experienced developer, designer, entrepreneur, or simply curious about technology, everyone is welcome. Throughout the event, participants will have opportunities to learn from mentors, connect with fellow innovators, and showcase their work.</p>
+            <h3>What to Expect</h3>
+            <ul>
+                <li> <b id="b1">Bullet 1:</b> <i>Team-based collaboration</i></li>
+                <li> <b id="b2">Bullet 2:</b> <i>Workshops and Technical Guidance</i></li>
+                <li> <b id="b3">Bullet 3:</b> <i>Networking Opportunities</i></li>
+            </ul>
+            <div id="event-details">
+                <ul>
+                    <h2>Details</h2>
+                    <h3>When</h3>
+                    <h3>Where</h3>
+                    <h3>Format</h3>
+                    <h3>Teams</h3>
+                    <h3>price</h3>
+                </ul>
+
+                <div id="terminal">
+
+                </div>
+                <div id="prize-list">
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="gmaps">
+            <a href="https://www.google.com/maps/search/?api=1&query=38.6790745597,-121.1798636671" target="_blank" rel="noopener noreferrer">
+            <iframe
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJQ-P1PJnZ5SfkuWbILdUSHXqNh89Beqc&q=118 Paseo Del Prado, Edinburg, TX 78539&zoom=17"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            </a>
+        </div> 
+
+        <div id="donate">
+
+        </div>
+
+        <section class="section" id="sponsor">
+            <div class="sponsor-panel reveal in">
+                <div>
+                    <div class="eyebrow">PARTNER WITH RGV HACKATHON</div>
+
+                        <h2 class="title">
+                            Invest in the next generation of
+                            <span class="hl">innovators.</span>
+                        </h2>
+
+                        <p class="section-desc">
+                            Your sponsorship helps make the RGV Hackathon an
+                            accessible and memorable experience for students
+                            across the Rio Grande Valley.
+                        </p>
+
+                    <div class="sponsor-perks">
+                        <div class="sponsor-perk">
+                            <span>01</span>
+                            Support local students and aspiring developers.
+                        </div>
+
+                        <div class="sponsor-perk">
+                            <span>02</span>
+                            Connect your organization with emerging talent.
+                        </div>
+
+                        <div class="sponsor-perk">
+                            <span>03</span>
+                            Help fund prizes, food, equipment, and workshops.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <form class="sponsor-form" action="https://formsubmit.co/YOUR_EMAIL" method="POST">
+
+                <input type="hidden" name="_subject" value="Sponsorship Inquiry">
+
+                <div class="sponsor-field">
+                    <label for="sponsor-name">Your name</label>
+                    <input id="sponsor-name" name="name" type="text" autocomplete="name" placeholder="Jane Doe" required>
+                </div>
+
+                <div class="sponsor-field">
+                    <label for="sponsor-email">Email</label>
+                    <input id="sponsor-email" name="email" type="email" autocomplete="email" placeholder="jane@company.com" required>
+                </div>
+
+                <div class="sponsor-field full">
+                    <label for="sponsor-company">
+                        Company or organization
+                    </label>
+                    <input id="sponsor-company" name="company" type="text" autocomplete="organization" placeholder="Your organization" required>
+                </div>
+
+                <div class="sponsor-field full">
+                    <label for="sponsor-message">
+                        How would you like to support the RGV Hackathon?
+                    </label>
+                    <textarea id="sponsor-message" name="message" placeholder="Tell us about your sponsorship ideas, potential contributions, or questions." required></textarea>
+                </div>
+
+                <button class="btn btn-primary sponsor-submit" type="submit">
+                    Send sponsorship inquiry
+                    <svg viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.4"
+                        stroke-linecap="round">
+                        <path d="M5 12h14M13 6l6 6-6 6"></path>
+                    </svg>
+                </button>
+
+                    <p class="sponsor-note">
+                    We'll reply to the email you provide.
+                    Prefer email? Reach us at
+                        <a href="mailto:YOUR_EMAIL" style="color:var(--cyan);">Placeholder@gmail.com</a>.
+                    </p>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <%- include("./partials/footer.ejs") %>
 </body>
 </html>

@@ -1,5 +1,6 @@
 import express from "express";
 import homeRouter from "./routes/homeRoutes.js";
+import path from "node:path"
 
 const app = express()
 const port = 3000
@@ -12,5 +13,5 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/home', homeRouter)
 
 app.listen(port, () => {
-    console.log(`server running at http://localhost:${port}`);
+    console.log(`server running at http://localhost:${port}/home`);
 });
