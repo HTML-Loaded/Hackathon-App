@@ -14,7 +14,7 @@ router.use((req, res, next) => {
 // serve the homepage
 router.route("/")
     .get((req, res) => {
-        res.render("home.ejs")
+        res.render("home")
     })
     .post((req, res) => {
         res.status(200())
