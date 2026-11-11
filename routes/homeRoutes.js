@@ -1,4 +1,4 @@
-import { Router } from "express"
+import Router from "express"
 import { getHome, submitSponsor } from "../controllers/homeController.js"
 
 const router = Router()

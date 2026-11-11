@@ -6,39 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up | RGV Hackathon</title>
     <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/auth.css">
 </head>
 <body>
     <%- include("./partials/navbar.ejs") %>
 
-    <section id="signup">
+    <section id="signup" class="auth-section">
+    <div class="auth-panel">
         <h2>Create an Account</h2>
         <p>Join the RGV Hackathon community!</p>
 
-        <form id="signup-form" action="/signup" method="POST">
-            <div class="form-field">
+        <form id="signup-form" class="auth-form" action="/signup" method="POST">
+            <div class="auth-field">
                 <label for="signup-name">Full Name</label>
                 <input id="signup-name" name="name" type="text" required>
             </div>
 
-            <div class="form-field">
+            <div class="auth-field">
                 <label for="signup-email">Email</label>
                 <input id="signup-email" name="email" type="email" required>
             </div>
 
-            <div class="form-field">
+            <div class="auth-field">
                 <label for="signup-password">Password</label>
                 <input id="signup-password" name="password" type="password" required>
             </div>
 
-            <div class="form-field">
+            <div class="auth-field">
                 <label for="signup-confirm">Confirm Password</label>
                 <input id="signup-confirm" name="confirmPassword" type="password" required>
             </div>
 
-            <button type="submit">Create Account</button>
+            <button class="auth-submit" type="submit">Create Account</button>
         </form>
 
-        <p>Already have an account? <a href="/login">Login</a></p>
-    </section>
+        <div class="auth-footer">
+            <p>Already have an account? <a href="/login">Login</a></p>
+        </div>
+    </div>
+</section>
 </body>
 </html>
