@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use('/home', homeRouter)
 
-app.use('authentication', authRouter)
+app.use('/authentication', authRouter)
 
 app.listen(port, () => {
     console.log(`server running at http://localhost:${port}/home`);
