@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Edit Team | RGV Hackathon</title>
+
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/partials.css">
+    <link rel="stylesheet" href="/css/team.css">
+</head>
+<body>
+    <%- include("./partials/navbar.ejs") %>
+
+    <main id="team-page">
+        <div class="team-panel">
+
+            <div class="team-header">
+                <div class="team-heading">
+                    <h1>Edit Team</h1>
+                    <p>Update your team's information.</p>
+                </div>
+            </div>
+
+            <form
+                action="/teams/<%= team.id %>/edit"
+                method="POST"
+                class="team-edit-form"
+            >
+                <div class="team-form-field">
+                    <label for="teamName">Team Name</label>
+
+                    <input
+                        type="text"
+                        id="teamName"
+                        name="teamName"
+                        value="<%= team.teamName %>"
+                        maxlength="100"
+                        required
+                    >
+                </div>
+
+                <div class="team-form-field">
+                    <label for="description">Description</label>
+
+                    <textarea
+                        id="description"
+                        name="description"
+                        rows="6"
+                        maxlength="2000"
+                        required
+                    ><%= team.description %></textarea>
+                </div>
+
+                <div class="team-edit-actions">
+                    <a
+                        href="/teams/<%= team.id %>"
+                        class="team-btn team-btn-secondary"
+                    >
+                        Cancel
+                    </a>
+
+                    <button type="submit" class="team-btn">
+                        Save Changes
+                    </button>
+                </div>
+            </form>
+
+        </div>
+    </main>
+
+    <%- include("./partials/footer.ejs") %>
+</body>
+</html>

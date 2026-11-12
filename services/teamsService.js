@@ -77,3 +77,22 @@ export const getTeamApplicants = async (team) => {
         .map(id => users.find(user => user.id === id))
         .filter(Boolean)
 }
+
+export const updateTeam = async (teamId, updates) => {
+    const teams = await getTeams()
+
+    const teamIndex = teams.findIndex(team => team.id === teamId)
+
+    if (teamIndex === -1) {
+        return null
+    }
+
+    teams[teamIndex] = {
+        ...teams[teamIndex],
+        ...updates
+    }
+
+    await fs.writeFile(teamsPath, JSON.stringify(teams, null, 4))
+
+    return teams[teamIndex]
+}

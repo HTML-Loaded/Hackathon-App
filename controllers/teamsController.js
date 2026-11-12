@@ -1,4 +1,4 @@
-import { getTeams, findTeamById, getTeamMembers, getTeamApplicants, applyToTeam, approveApplicant} from "../services/teamsService.js"
+import { getTeams, findTeamById, getTeamMembers, getTeamApplicants, applyToTeam, approveApplicant, updateTeam} from "../services/teamsService.js"
 import { findUserById, updateUser } from "../services/userService.js"
 
 // Display all teams
@@ -117,6 +117,70 @@ export const approveApplication = async (req, res, next) => {
 
         // Keep the user's teamId synchronized
         await updateUser(applicantId, { teamId })
+
+        res.redirect(`/teams/${teamId}`)
+    }
+    catch (error) {
+        next(error)
+    }
+}
+
+export const getEditTeamPage = async (req, res, next) => {
+    try {
+        const teamId = Number(req.params.id)
+
+        if (!Number.isSafeInteger(teamId) || teamId < 1) {
+            return res.sendStatus(404)
+        }
+
+        const team = await findTeamById(teamId)
+
+        if (!team) {
+            return res.sendStatus(404)
+        }
+
+        if (!team.memberList.includes(req.session.userId)) {
+            return res.sendStatus(403)
+        }
+
+        res.render("editTeam", { team })
+    }
+    catch (error) {
+        next(error)
+    }
+}
+
+export const saveTeamChanges = async (req, res, next) => {
+    try {
+        const teamId = Number(req.params.id)
+
+        if (!Number.isSafeInteger(teamId) || teamId < 1) {
+            return res.sendStatus(404)
+        }
+
+        const team = await findTeamById(teamId)
+
+        if (!team) {
+            return res.sendStatus(404)
+        }
+
+        // Only members of this team can edit it
+        if (!team.memberList.includes(req.session.userId)) {
+            return res.sendStatus(403)
+        }
+
+        const teamName = req.body.teamName?.trim()
+        const description = req.body.description?.trim()
+
+        if (!teamName || !description ||
+            teamName.length > 100 || description.length > 2000) {
+            return res.status(400).send("Invalid team information")
+        }
+
+        await updateTeam(teamId, {
+            teamName,
+            description
+        })
 
         res.redirect(`/teams/${teamId}`)
     }

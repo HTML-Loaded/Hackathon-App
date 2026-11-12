@@ -12,7 +12,13 @@
         <li><a href="/home">Home</a></li>
         <li><a href="">Events</a></li>
         <li><a href="/teams">Teams</a></li>
-        <li><a href="">Link 4</a></li>
+        <% if (currentUser && currentUser.teamId !== 0) { %>
+            <li>
+                <a href="/teams/<%= currentUser.teamId %>">
+                    My Team
+                </a>
+            </li>
+        <% } %>
         <li><a id="button">Button</a></li>
     </ul>
 

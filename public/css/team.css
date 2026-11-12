@@ -197,8 +197,61 @@
     opacity: 0.8;
 }
 
-@media (max-width: 600px) {
-    .team-applicant {
-        flex-wrap: wrap;
-    }
+
+/*** Edit Team Form ***/
+
+.team-edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-top: 25px;
+}
+
+.team-form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.team-form-field label {
+    color: #7C3E2E;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.team-form-field input,
+.team-form-field textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #69532C;
+    border-radius: 5px;
+    background: #D2D2C8;
+    color: #212A31;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+.team-form-field textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+.team-form-field input:focus,
+.team-form-field textarea:focus {
+    outline: 2px solid #7C3E2E;
+    outline-offset: 2px;
+}
+
+.team-edit-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.team-btn-secondary {
+    background: #69532C;
+}
+
+.team-btn-secondary:hover {
+    background: #212A31;
 }
