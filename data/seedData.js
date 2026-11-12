@@ -24,6 +24,26 @@ export const seedData = async () => {
                 roles: "participant",
                 skills: ["HTML", "CSS"],
                 description: ""
+            },
+            {
+                id: 3,
+                teamId: 0,
+                profilePicture: "https://media.tenor.com/QVXwXVq-1EYAAAAM/tole-tole-mei-mei.gif",
+                name: "Leo",
+                email: "leo@example.com",
+                password: await bcrypt.hash("mypassword", 10),
+                skills: ["HTML", "CSS", "Javascript", "NodeJS + Express", "Procrastination"],
+                description: "Full stack pro developer #1 on hackerrank fr"
+            },
+            {
+                id: 67,
+                teamId: 0,
+                profilePicture: "https://media1.tenor.com/m/vdPXShwp4q4AAAAd/orospu-esek-e%C5%9F%C5%9F%C5%9Fekk.gif",
+                name: "Jorge",
+                email: "jorge@example.com",
+                password: await bcrypt.hash("aPassword", 10),
+                skills: ["Python", "C++", "Java", "Volleball setter", "boardgame enthusiast"],
+                description: "Loveable guy that struggles tying his shoes"
             }
         ],
 

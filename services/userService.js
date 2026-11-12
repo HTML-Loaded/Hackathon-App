@@ -49,3 +49,22 @@ export const createUser = async (name, email, password, skills) => {
 export const verifyPassword = async (password, hash) => {
     return bcrypt.compare(password, hash)
 }
+
+export const updateUser = async (id, updates) => {
+    const users = await getUsers()
+
+    const userIndex = users.findIndex(user => user.id === id)
+
+    if (userIndex === -1) {
+        return null
+    }
+
+    users[userIndex] = {
+        ...users[userIndex],
+        ...updates
+    }
+
+    await fs.writeFile(filePath, JSON.stringify(users, null, 4))
+
+    return users[userIndex]
+}

@@ -46,9 +46,14 @@
             </div>
 
             <div class="user-actions">
-                <a href="/user/edit" class="user-edit-btn">Edit Profile</a>
+                <% if (canEdit) { %>
+                    <a href="/user/edit" class="user-edit-btn">
+                        Edit Profile
+                    </a>
+                <% } else if (currentUser) { %>
+                    <!-- Team request buttons will go here later -->
+                <% } %>
             </div>
-
         </div>
     </section>
 

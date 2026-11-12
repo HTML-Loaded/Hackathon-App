@@ -4,9 +4,6 @@ import { findUserById } from "../services/userService.js"
 export const requireAuth = async (req, res, next) => {
     try {
 
-        console.log("Session:", req.session)
-        console.log("User ID:", req.session.userId)
-
         if (!req.session.userId) {
             return res.redirect("/login")
         }

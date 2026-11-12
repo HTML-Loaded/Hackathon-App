@@ -5,7 +5,7 @@
         "profilePicture": "/images/default-profile.png",
         "name": "John Smith",
         "email": "john@example.com",
-        "password": "$2b$10$2a9qTAv2NWwY9WJteqJEnOCqXj83oIWrk5KqxuB984U4EjDkIbgk.",
+        "password": "$2b$10$51QUiuZ0sQTJbdu33dGm1.TOOKDGBOLsnCh07rBjDhFV0PCJ3yZna",
         "roles": "p",
         "skills": [
             "JavaScript",
@@ -19,12 +19,44 @@
         "profilePicture": "/images/default-profile.png",
         "name": "Jane Doe",
         "email": "jane@example.com",
-        "password": "$2b$10$wtMXvdcdLDWUqFA3EbhmEuqPDZ7aEpCM5GHLXFtRPGfg0I2UandJK",
+        "password": "$2b$10$nauKqtpAi7rEBJU/op7P4OG1rFQkWIYeGO3pAHnQaAER2AkTzDbKm",
         "roles": "participant",
         "skills": [
             "HTML",
             "CSS"
         ],
         "description": ""
+    },
+    {
+        "id": 3,
+        "teamId": 0,
+        "profilePicture": "https://media.tenor.com/QVXwXVq-1EYAAAAM/tole-tole-mei-mei.gif",
+        "name": "Leo",
+        "email": "leo@example.com",
+        "password": "$2b$10$9fW70f74OlNhrbqxh/ih2.wufN0Nyr3jTUPPa4IQea3vvNw0pZP4a",
+        "skills": [
+            "HTML",
+            "CSS",
+            "Javascript",
+            "NodeJS + Express",
+            "Procrastination"
+        ],
+        "description": "Full stack pro developer #1 on hackerrank fr"
+    },
+    {
+        "id": 67,
+        "teamId": 0,
+        "profilePicture": "https://media1.tenor.com/m/vdPXShwp4q4AAAAd/orospu-esek-e%C5%9F%C5%9F%C5%9Fekk.gif",
+        "name": "Jorge",
+        "email": "jorge@example.com",
+        "password": "$2b$10$1XaYaaxGXMwCazjhZRgXE.B.kWDDvNo4W9KEhwZ9Il0eyJqXfqcy.",
+        "skills": [
+            "Python",
+            "C++",
+            "Java",
+            "Volleball setter",
+            "boardgame enthusiast"
+        ],
+        "description": "Loveable guy that struggles tying his shoes"
     }
 ]
