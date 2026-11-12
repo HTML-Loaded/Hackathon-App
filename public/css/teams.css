@@ -1,0 +1,138 @@
+
+/*** Teams Page ***/
+
+#teams-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 110px 30px 70px;
+    min-height: 80vh;
+    box-sizing: border-box;
+}
+
+.teams-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.teams-header h1 {
+    color: #212A31;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.teams-header p {
+    color: #69532C;
+    line-height: 1.6;
+}
+
+/*** Teams Grid ***/
+
+.teams-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+/*** Team Cards ***/
+
+.team-card {
+    position: relative;
+    background: #E6E3DA;
+    border: 1px solid #69532C;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.team-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(33, 42, 49, 0.15);
+}
+
+.team-card-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+}
+
+.team-card h2 {
+    color: #7C3E2E;
+    font-size: 22px;
+    margin: 0 80px 15px 0;
+}
+
+.team-description {
+    color: #212A31;
+    line-height: 1.6;
+    margin: 0 0 25px;
+    overflow-wrap: anywhere;
+}
+
+/*** Members ***/
+
+.team-members {
+    margin-top: auto;
+    padding-top: 15px;
+    border-top: 1px solid #b6aca0;
+}
+
+.team-members h3 {
+    color: #69532C;
+    font-size: 17px;
+    margin: 0 0 10px;
+}
+
+.team-members ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.team-members li {
+    color: #212A31;
+    padding: 4px 0;
+    font-size: 14px;
+}
+
+.team-members li::before {
+    content: "• ";
+    color: #7C3E2E;
+}
+
+/*** Apply Button ***/
+
+.team-apply-form {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    z-index: 1;
+}
+
+.team-apply-btn {
+    padding: 8px 12px;
+    background: #7C3E2E;
+    color: #E6E3DA;
+    border: none;
+    border-radius: 5px;
+    font: inherit;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.team-apply-btn:hover {
+    background: #69532C;
+}
+
+/*** Empty State ***/
+
+.teams-empty {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 40px;
+    color: #69532C;
+}

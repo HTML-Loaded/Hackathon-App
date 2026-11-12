@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "teamName": "Code Cowboys",
+        "description": "A team of developers building innovative applications for the Rio Grande Valley. We focus on full-stack development and creating practical solutions to everyday problems.",
+        "memberList": [
+            1,
+            2,
+            3
+        ]
+    },
+    {
+        "id": 2,
+        "teamName": "Valley Innovators",
+        "description": "We combine different programming skills to develop creative solutions for local businesses. Our goal is to build useful applications while learning new technologies.",
+        "memberList": [
+            10,
+            8
+        ]
+    },
+    {
+        "id": 3,
+        "teamName": "Jorge's Last Stand",
+        "description": "A one-man development team determined to conquer the hackathon. Armed with Python, C++, Java, and an unreasonable amount of confidence, Jorge is ready to take on the competition.",
+        "memberList": [
+            67
+        ]
+    }
+]

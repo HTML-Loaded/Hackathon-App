@@ -1,0 +1,166 @@
+
+/*** Team Page ***/
+
+#team-page {
+    display: flex;
+    justify-content: center;
+    min-height: 80vh;
+    padding: 110px 20px 60px;
+    box-sizing: border-box;
+}
+
+.team-panel {
+    width: 100%;
+    max-width: 800px;
+    height: fit-content;
+    padding: 30px;
+    background: #E6E3DA;
+    border: 1px solid #69532C;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/*** Header ***/
+
+.team-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #b6aca0;
+}
+
+.team-heading h1 {
+    margin: 0 0 10px;
+    color: #212A31;
+    font-size: 30px;
+}
+
+.team-heading p {
+    margin: 0;
+    color: #69532C;
+}
+
+/*** Sections ***/
+
+.team-section {
+    padding: 25px 0;
+    border-bottom: 1px solid #b6aca0;
+}
+
+.team-section h2 {
+    margin: 0 0 15px;
+    color: #7C3E2E;
+    font-size: 21px;
+}
+
+.team-description {
+    margin: 0;
+    color: #212A31;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+/*** Members ***/
+
+.team-member-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px;
+    background: #D2D2C8;
+    border: 1px solid #b6aca0;
+    border-radius: 7px;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.team-member:hover {
+    background: #c6c3b9;
+}
+
+.team-member-image {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #7C3E2E;
+    flex-shrink: 0;
+}
+
+.team-member-info {
+    min-width: 0;
+}
+
+.team-member-info h3 {
+    margin: 0 0 5px;
+    color: #212A31;
+    font-size: 17px;
+}
+
+.team-member-info p {
+    margin: 0;
+    color: #69532C;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+/*** Buttons ***/
+
+.team-actions,
+.team-management-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.team-btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background: #7C3E2E;
+    color: #E6E3DA;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.team-btn:hover {
+    background: #69532C;
+}
+
+.team-btn-danger {
+    background: #8B2929;
+}
+
+.team-btn-danger:hover {
+    background: #661D1D;
+}
+
+/*** Footer ***/
+
+.team-footer {
+    padding-top: 25px;
+}
+
+.team-back-link {
+    color: #7C3E2E;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.team-back-link:hover {
+    text-decoration: underline;
+}

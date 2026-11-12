@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams | RGV Hackathon</title>
+
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/partials.css">
+    <link rel="stylesheet" href="/css/teams.css">
+</head>
+<body>
+    <%- include("./partials/navbar.ejs") %>
+
+    <main id="teams-page">
+        <div class="teams-header">
+            <h1>Hackathon Teams</h1>
+            <p>
+                Explore participating teams, meet their members,
+                and find a team to join.
+            </p>
+        </div>
+
+        <div class="teams-grid">
+            <% if (locals.teams && locals.teams.length > 0) { %>
+                <% locals.teams.forEach(team => { %>
+                    <div class="team-card">
+
+                        <form
+                            action="/teams/<%= team.id %>/apply"
+                            method="POST"
+                            class="team-apply-form"
+                        >
+                            <button type="submit" class="team-apply-btn">
+                                Apply
+                            </button>
+                        </form>
+
+                        <a href="/teams/<%= team.id %>" class="team-card-link">
+                            <h2><%= team.teamName %></h2>
+
+                            <p class="team-description">
+                                <%= (team.description || "")
+                                    .match(/[^.!?]+[.!?]+|[^.!?]+$/g)
+                                    ?.slice(0, 2)
+                                    .join(" ")
+                                    .trim() || "No description provided." %>
+                            </p>
+
+                            <div class="team-members">
+                                <h3>Members</h3>
+
+                                <% if (team.memberList && team.memberList.length > 0) { %>
+                                    <ul>
+                                        <% team.memberList.forEach(member => { %>
+                                            <li><%= member %></li>
+                                        <% }) %>
+                                    </ul>
+                                <% } else { %>
+                                    <p>No members listed.</p>
+                                <% } %>
+                            </div>
+                        </a>
+
+                    </div>
+                <% }) %>
+            <% } else { %>
+                <p class="teams-empty">No teams have been created yet.</p>
+            <% } %>
+        </div>
+    </main>
+
+    <%- include("./partials/footer.ejs") %>
+</body>
+</html>
