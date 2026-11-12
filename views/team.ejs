@@ -24,12 +24,19 @@
                     </p>
                 </div>
 
+                
                 <div class="team-actions">
                     <% if (isMember) { %>
                         <a href="/teams/<%= team.id %>/edit" class="team-btn">
                             Edit Team
                         </a>
-                    <% } else if (currentUser && !currentUser.teamId) { %>
+
+                    <% } else if (hasApplied) { %>
+                        <button class="team-btn" disabled>
+                            Applied
+                        </button>
+
+                    <% } else if (currentUser && currentUser.teamId === 0) { %>
                         <form action="/teams/<%= team.id %>/apply" method="POST">
                             <button type="submit" class="team-btn">
                                 Apply to Team
@@ -37,6 +44,7 @@
                         </form>
                     <% } %>
                 </div>
+
             </div>
 
             <section class="team-section">
@@ -78,23 +86,50 @@
                 <% } %>
             </section>
 
+            
             <% if (isMember) { %>
                 <section class="team-section team-private">
-                    <h2>Team Management</h2>
+                    <h2>Team Applications</h2>
 
-                    <div class="team-management-actions">
-                        <a href="/teams/<%= team.id %>/applications" class="team-btn">
-                            View Applications
-                        </a>
+                    <% if (applicants.length > 0) { %>
+                        <div class="team-member-list">
+                            <% applicants.forEach(applicant => { %>
+                                <div class="team-applicant">
+                                    <a
+                                        href="/user/<%= applicant.id %>"
+                                        class="team-applicant-info"
+                                    >
+                                        <img
+                                            src="<%= applicant.profilePicture || '/images/default-profile.png' %>"
+                                            alt="Profile picture"
+                                            class="team-member-image"
+                                        >
 
-                        <form action="/teams/<%= team.id %>/leave" method="POST">
-                            <button type="submit" class="team-btn team-btn-danger">
-                                Leave Team
-                            </button>
-                        </form>
-                    </div>
+                                        <div class="team-member-info">
+                                            <h3><%= applicant.name %></h3>
+                                            <p>
+                                                <%= applicant.skills?.join(", ") || "No skills listed" %>
+                                            </p>
+                                        </div>
+                                    </a>
+
+                                    <form
+                                        action="/teams/<%= team.id %>/approve/<%= applicant.id %>"
+                                        method="POST"
+                                    >
+                                        <button type="submit" class="team-btn">
+                                            Approve
+                                        </button>
+                                    </form>
+                                </div>
+                            <% }) %>
+                        </div>
+                    <% } else { %>
+                        <p>No pending applications.</p>
+                    <% } %>
                 </section>
             <% } %>
+
 
             <div class="team-footer">
                 <a href="/teams" class="team-back-link">

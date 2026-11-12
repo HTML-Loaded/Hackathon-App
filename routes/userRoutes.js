@@ -7,12 +7,12 @@ const router = Router();
 // Route for user to view their profile or another profile
 router.get("/", requireAuth, getUserProfile)
 
-router.get("/:id", getPublicProfile)
-
 // Route for user to edit profile
 router.route("/edit")
     .get(requireAuth, getEditProfile)
     .post(requireAuth, updateProfile)
+
+router.get("/:id", getPublicProfile)
 
 
 export default router

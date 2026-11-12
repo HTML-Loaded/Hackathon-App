@@ -51,10 +51,10 @@
                             <div class="team-members">
                                 <h3>Members</h3>
 
-                                <% if (team.memberList && team.memberList.length > 0) { %>
+                                <% if (team.members.length > 0) { %>
                                     <ul>
-                                        <% team.memberList.forEach(member => { %>
-                                            <li><%= member %></li>
+                                        <% team.members.forEach(member => { %>
+                                            <li><%= member.name %></li>
                                         <% }) %>
                                     </ul>
                                 <% } else { %>

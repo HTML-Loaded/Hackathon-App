@@ -164,3 +164,41 @@
 .team-back-link:hover {
     text-decoration: underline;
 }
+
+
+/*** Team Applications ***/
+
+.team-applicant {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 12px;
+    background: #D2D2C8;
+    border: 1px solid #b6aca0;
+    border-radius: 7px;
+}
+
+.team-applicant-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    min-width: 0;
+    text-decoration: none;
+}
+
+.team-applicant-info:hover h3 {
+    text-decoration: underline;
+}
+
+.team-btn:disabled {
+    background: #8B8B83;
+    cursor: default;
+    opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+    .team-applicant {
+        flex-wrap: wrap;
+    }
+}
