@@ -1,11 +1,15 @@
 import { Router } from "express"
-import { getTeamsPage, getTeamPage, submitApplication, approveApplication, getEditTeamPage, saveTeamChanges} from "../controllers/teamsController.js"
+import { getTeamsPage, getTeamPage, submitApplication, approveApplication, getEditTeamPage, saveTeamChanges, getCreateTeamPage, submitTeam} from "../controllers/teamsController.js"
 import { requireAuth } from "../middleware/authMiddleware.js"
 
 const router = Router()
 
 // All teams
 router.get("", getTeamsPage)
+
+router.get("/create", requireAuth, getCreateTeamPage)
+
+router.post("/create", requireAuth, submitTeam)
 
 // Individual team
 router.get("/:id", getTeamPage)

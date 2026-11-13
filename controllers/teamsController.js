@@ -1,4 +1,4 @@
-import { getTeams, findTeamById, getTeamMembers, getTeamApplicants, applyToTeam, approveApplicant, updateTeam} from "../services/teamsService.js"
+import { getTeams, findTeamById, getTeamMembers, getTeamApplicants, applyToTeam, approveApplicant, updateTeam, createTeam} from "../services/teamsService.js"
 import { findUserById, updateUser } from "../services/userService.js"
 
 // Display all teams
@@ -183,6 +183,50 @@ export const saveTeamChanges = async (req, res, next) => {
         })
 
         res.redirect(`/teams/${teamId}`)
+    }
+    catch (error) {
+        next(error)
+    }
+}
+
+export const getCreateTeamPage = (req, res) => {
+    if (res.locals.currentUser.teamId !== 0) {
+        return res.redirect(`/teams/${res.locals.currentUser.teamId}`)
+    }
+
+    res.render("createTeam")
+}
+
+export const submitTeam = async (req, res, next) => {
+    try {
+        const userId = req.session.userId
+        const { teamName, description } = req.body
+
+        const user = res.locals.currentUser
+
+        // Prevent users from creating multiple teams
+        if (user.teamId !== 0) {
+            return res.redirect(`/teams/${user.teamId}`)
+        }
+
+        if (!teamName?.trim() || !description?.trim()) {
+            return res.status(400).send("All fields are required")
+        }
+
+        const team = await createTeam(
+            teamName.trim(),
+            description.trim(),
+            userId
+        )
+
+        if (!team) {
+            return res.status(409).send("Team name already exists")
+        }
+
+        // Associate the creator with their new team
+        await updateUser(userId, { teamId: team.id })
+
+        res.redirect(`/teams/${team.id}`)
     }
     catch (error) {
         next(error)

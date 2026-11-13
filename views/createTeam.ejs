@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Team | RGV Hackathon</title>
+
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/partials.css">
+    <link rel="stylesheet" href="/css/teams.css">
+</head>
+<body>
+    <%- include("./partials/navbar.ejs") %>
+
+    <main class="create-team-page">
+        <h1>Create a Team</h1>
+
+        <p>
+            Start your own hackathon team and invite other
+            participants to join.
+        </p>
+
+        <form action="/teams/create" method="POST" class="create-team-form">
+            <div>
+                <label for="teamName">Team Name</label>
+
+                <input
+                    type="text"
+                    id="teamName"
+                    name="teamName"
+                    maxlength="100"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="description">Team Description</label>
+
+                <textarea
+                    id="description"
+                    name="description"
+                    rows="5"
+                    maxlength="1000"
+                    required
+                ></textarea>
+            </div>
+
+            <div class="create-team-actions">
+                <a href="/teams">Cancel</a>
+
+                <button type="submit">
+                    Create Team
+                </button>
+            </div>
+        </form>
+    </main>
+
+    <%- include("./partials/footer.ejs") %>
+</body>
+</html>
