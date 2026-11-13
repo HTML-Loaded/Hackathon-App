@@ -161,22 +161,5 @@
             10,
             8
         ]
-    },
-    {
-        "id": 8,
-        "name": "Introduction to Python",
-        "description": "Learn Python fundamentals through practical exercises.",
-        "locations": "Room 204",
-        "startDate": "2026-11-19",
-        "endDate": "2026-11-19",
-        "timestart": "14:00",
-        "timeend": "15:00",
-        "imgs": [
-            "/images/events/python.jpg"
-        ],
-        "participantNum": 1,
-        "participants": [
-            13
-        ]
     }
 ]

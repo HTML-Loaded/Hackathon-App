@@ -5,7 +5,7 @@
         "profilePicture": "/images/default-profile.png",
         "name": "John Smith",
         "email": "john@example.com",
-        "password": "$2b$10$8pwqasF.vHm59ELpeWnx4OjeHZCxDwguq1SONfd11HGwBACl/m.Uy",
+        "password": "$2b$10$5MPpd5AXMKOLz0i4QW02CexrX/lSc/YDaJTtobrHEUqAzLbbJtuoO",
         "roles": [
             "participant"
         ],
@@ -21,7 +21,7 @@
         "profilePicture": "/images/default-profile.png",
         "name": "Jane Doe",
         "email": "jane@example.com",
-        "password": "$2b$10$uEjhi6mi9Kn50L5tH5Z11edIzolmbxVFsaLLWVM1vj.TOMCF9pOjW",
+        "password": "$2b$10$YmvK246NellMwRPQrFZPDOF7BymRVdUZUSIdr/KwIH1lu0hzEUZgC",
         "roles": [
             "participant"
         ],
@@ -37,7 +37,7 @@
         "profilePicture": "https://media.tenor.com/QVXwXVq-1EYAAAAM/tole-tole-mei-mei.gif",
         "name": "Leo",
         "email": "leo@example.com",
-        "password": "$2b$10$PnFDHv9syJMk.Jr.KYTadeoFbghx00NDhhl5gjL7JEXGYstZJMTla",
+        "password": "$2b$10$8PQB/NKu/bxFh9Vsue3tleosCZp96Gmg8J3RVzBNNcT8igqpaqzFm",
         "roles": [
             "participant"
         ],
@@ -56,7 +56,7 @@
         "profilePicture": "https://media1.tenor.com/m/vdPXShwp4q4AAAAd/orospu-esek-e%C5%9F%C5%9F%C5%9Fekk.gif",
         "name": "Jorge",
         "email": "jorge@example.com",
-        "password": "$2b$10$1DEmPhHPcsdtRJthRS6WQe2.W9NjHJGgQ3lYfjwvT936XibsfJSTa",
+        "password": "$2b$10$f5GImgdTsx7qjeCV1w0gneAv4rfhDjuWz7mAZVgeGjgSEKHG2AlDO",
         "roles": [
             "participant"
         ],
@@ -75,7 +75,7 @@
         "profilePicture": "",
         "name": "Ivan",
         "email": "ivan@example.com",
-        "password": "$2b$10$QBMVt1kd0fFmjpFQdNZlK.66zR/hcb5dt7sTBZ1wmz6c.XqBaWvxq",
+        "password": "$2b$10$HU0irrzjIr37JR4/AYFApOXz7Z3Yn9kJzMNfbc2ySQrcGnvJOL9dK",
         "roles": [
             "participant"
         ],
@@ -90,7 +90,7 @@
         "profilePicture": "",
         "name": "May",
         "email": "may@example.com",
-        "password": "$2b$10$UGxii1XC3h8R6mJ5ct05h.Uo9CVaSRmlqFnc6Qiik3VtYr2birzvC",
+        "password": "$2b$10$pJOsAru10DOF15q2u4rkueOIqbaOPO1mejwtEoBKgddgWmDFBavAC",
         "roles": [
             "participant"
         ],
@@ -106,7 +106,7 @@
         "profilePicture": "https://media.discordapp.net/attachments/746382654378737938/1570258797476450415/IMG_5392.png?ex=6af670f7&is=6af51f77&hm=5273aef692e4be42011dd53260016e5f01536b320d3a182c43a01db00b44b763&=&format=webp&quality=lossless",
         "name": "Dave",
         "email": "dave@example.com",
-        "password": "$2b$10$z1ICLDOX546kmssm6pZ.meR6dKu5Z55YNJ79CUu4Doag59UtpPDDq",
+        "password": "$2b$10$iF4ImW2BdgnCxBRyulnLWOioHEs8zRCxwWwhIYQdKl89Xc/1kEF8W",
         "roles": [
             "participant"
         ],
@@ -121,7 +121,7 @@
         "profilePicture": "",
         "name": "Divia",
         "email": "divia@example.com",
-        "password": "$2b$10$a8VuFbCKPc2x3Cbb5zXTTuBolJ6hV4x6v4vpRt8bt8kv1XRD3aq7O",
+        "password": "$2b$10$grzS3jFhoXjtX1WzF2NDzeNVoXTey1oV1MnA5xoyP41RdZwPZflC.",
         "roles": [
             "participant"
         ],
