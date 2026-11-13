@@ -2,7 +2,7 @@
     {
         "id": 1,
         "teamName": "Code Cowboys",
-        "description": "A team of developers building innovative applications for the Rio Grande Valley. We focus on full-stack development and creating practical solutions to everyday problems. a",
+        "description": "A team of developers building innovative applications for the Rio Grande Valley. We focus on full-stack development and creating practical solutions to everyday problems.",
         "memberList": [
             1,
             2,
@@ -26,6 +26,15 @@
         "description": "A one-man development team determined to conquer the hackathon. Armed with Python, C++, Java, and an unreasonable amount of confidence, Jorge is ready to take on the competition.",
         "memberList": [
             67
+        ],
+        "applicationList": []
+    },
+    {
+        "id": 4,
+        "teamName": "asdfasdf",
+        "description": "asdfasdf dddd",
+        "memberList": [
+            13
         ],
         "applicationList": []
     }

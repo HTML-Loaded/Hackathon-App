@@ -22,6 +22,12 @@
             </p>
         </div>
 
+        <% if (currentUser && currentUser.teamId === 0) { %>
+            <a href="/teams/create" class="create-team-btn">
+                + Create Team
+            </a>
+        <% } %>
+
         <div class="teams-grid">
             <% if (locals.teams && locals.teams.length > 0) { %>
                 <% locals.teams.forEach(team => { %>

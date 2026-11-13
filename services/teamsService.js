@@ -96,3 +96,35 @@ export const updateTeam = async (teamId, updates) => {
 
     return teams[teamIndex]
 }
+
+export const createTeam = async (teamName, description, userId) => {
+    const teams = await getTeams()
+
+    // Prevent duplicate team names
+    const nameExists = teams.some(team =>
+        team.teamName.toLowerCase() === teamName.toLowerCase()
+    )
+
+    if (nameExists) {
+        return null
+    }
+
+    const newTeam = {
+        id: teams.length > 0
+            ? Math.max(...teams.map(team => team.id)) + 1
+            : 1,
+        teamName,
+        description,
+        memberList: [userId],
+        applicationList: []
+    }
+
+    teams.push(newTeam)
+
+    await fs.writeFile(
+        teamsPath,
+        JSON.stringify(teams, null, 4)
+    )
+
+    return newTeam
+}
