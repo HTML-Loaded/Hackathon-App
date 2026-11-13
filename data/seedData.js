@@ -126,6 +126,128 @@ export const seedData = async () => {
                 memberList: [67],
                 applicationList: []
             }
+        ],
+
+        "events.json": [
+            {
+                id: 1,
+                name: "Opening Ceremony",
+                description: "Welcome to the RGV Hackathon! Join us for an introduction to the event, an overview of the competition tracks, and important announcements. Organizers will explain the schedule, judging criteria, and available resources.",
+                locations: "Auditorium 101",
+                startDate: "2026-11-19",
+                endDate: "2026-11-19",
+                timestart: "09:00",
+                timeend: "10:00",
+                imgs: [
+                    "/images/events/opening-1.jpg",
+                    "/images/events/opening-2.jpg",
+                    "/images/events/opening-3.jpg"
+                ],
+                participantNum: 6,
+                participants: [1, 2, 3, 67, 10, 8]
+            },
+            {
+                id: 2,
+                name: "Team Building and Networking",
+                description: "Meet fellow developers, designers, and entrepreneurs participating in the hackathon. This session helps participants find teammates, share project ideas, and connect with others who have complementary skills.",
+                locations: "Room 204",
+                startDate: "2026-11-19",
+                endDate: "2026-11-19",
+                timestart: "10:30",
+                timeend: "11:30",
+                imgs: [
+                    "/images/events/networking-1.jpg",
+                    "/images/events/networking-2.jpg",
+                    "/images/events/networking-3.jpg"
+                ],
+                participantNum: 5,
+                participants: [1, 2, 3, 10, 8]
+            },
+            {
+                id: 3,
+                name: "Full Stack Development Workshop",
+                description: "Learn practical techniques for building modern web applications using HTML, CSS, JavaScript, Node.js, and Express. Participants will explore frontend and backend development, API integration, and useful tools for the upcoming competition.",
+                locations: "Computer Lab 305",
+                startDate: "2026-11-19",
+                endDate: "2026-11-19",
+                timestart: "13:30",
+                timeend: "14:30",
+                imgs: [
+                    "/images/events/workshop-1.jpg",
+                    "/images/events/workshop-2.jpg",
+                    "/images/events/workshop-3.jpg"
+                ],
+                participantNum: 4,
+                participants: [1, 3, 67, 10]
+            },
+            {
+                id: 4,
+                name: "RGV Hackathon 2026",
+                description: "The main event of the RGV Hackathon! Teams will have 24 hours to design, develop, and complete innovative projects in Social Impact, Business, and Artificial Intelligence. Participants can collaborate, receive mentorship, and compete for prizes while bringing their ideas to life.",
+                locations: "Innovation Hall 100",
+                startDate: "2026-11-20",
+                endDate: "2026-11-21",
+                timestart: "09:00",
+                timeend: "09:00",
+                imgs: [
+                    "/images/events/hackathon-1.jpg",
+                    "/images/events/hackathon-2.jpg",
+                    "/images/events/hackathon-3.jpg"
+                ],
+                participantNum: 6,
+                participants: [1, 2, 3, 67, 10, 8]
+            },
+            {
+                id: 5,
+                name: "Cybersecurity Capture the Flag Challenge",
+                description: "Test your cybersecurity skills in a series of challenges involving cryptography, web security, and problem-solving. Participants will compete to discover hidden flags, solve puzzles, and earn points. Beginners and experienced developers are welcome.",
+                locations: "Computer Lab 305",
+                startDate: "2026-11-21",
+                endDate: "2026-11-21",
+                timestart: "10:00",
+                timeend: "11:00",
+                imgs: [
+                    "/images/events/ctf-1.jpg",
+                    "/images/events/ctf-2.jpg",
+                    "/images/events/ctf-3.jpg"
+                ],
+                participantNum: 4,
+                participants: [1, 3, 67, 10]
+            },
+            {
+                id: 6,
+                name: "Hackathon Results Announcement",
+                description: "The moment everyone has been waiting for! Join us as the judges announce the winning teams for the Social Impact, Business, and Artificial Intelligence tracks. First, second, and third-place winners will be recognized for their achievements and awarded prizes.",
+                locations: "Auditorium 101",
+                startDate: "2026-11-21",
+                endDate: "2026-11-21",
+                timestart: "15:00",
+                timeend: "16:00",
+                imgs: [
+                    "/images/events/results-1.jpg",
+                    "/images/events/results-2.jpg",
+                    "/images/events/results-3.jpg"
+                ],
+                participantNum: 6,
+                participants: [1, 2, 3, 67, 10, 8]
+            },
+            {
+                id: 7,
+                name: "Closing Ceremony and Celebration",
+                description: "Celebrate the conclusion of the RGV Hackathon with fellow participants, mentors, and organizers. This final gathering recognizes everyone's hard work, provides opportunities for networking, and highlights the accomplishments of the event.",
+                locations: "Conference Hall 202",
+                startDate: "2026-11-21",
+                endDate: "2026-11-21",
+                timestart: "16:30",
+                timeend: "17:30",
+                imgs: [
+                    "/images/events/closing-1.jpg",
+                    "/images/events/closing-2.jpg",
+                    "/images/events/closing-3.jpg"
+                ],
+                participantNum: 6,
+                participants: [1, 2, 3, 67, 10, 8]
+            }
         ]
 
 

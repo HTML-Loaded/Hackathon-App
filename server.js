@@ -5,6 +5,7 @@ import homeRouter from "./routes/homeRoutes.js";
 import authRouter from "./routes/authRoutes.js"
 import userRouter from "./routes/userRoutes.js"
 import teamsRouter from "./routes/teamsRoutes.js"
+import eventsRouter from "./routes/eventsRoutes.js"
 import path from "node:path"
 import { randomBytes } from "node:crypto"
 import { resetData } from "./data/resetData.js"
@@ -46,6 +47,8 @@ app.use('/', authRouter)
 app.use('/user', userRouter)
 
 app.use('/teams', teamsRouter)
+
+app.use("/events", eventsRouter)
 
 app.listen(port, () => {
     console.log(`server running at http://localhost:${port}/home`);
