@@ -8,7 +8,9 @@
             2,
             3
         ],
-        "applicationList": []
+        "applicationList": [
+            68
+        ]
     },
     {
         "id": 2,
@@ -18,7 +20,9 @@
             10,
             8
         ],
-        "applicationList": []
+        "applicationList": [
+            68
+        ]
     },
     {
         "id": 3,
@@ -26,6 +30,17 @@
         "description": "A one-man development team determined to conquer the hackathon. Armed with Python, C++, Java, and an unreasonable amount of confidence, Jorge is ready to take on the competition.",
         "memberList": [
             67
+        ],
+        "applicationList": [
+            68
+        ]
+    },
+    {
+        "id": 4,
+        "teamName": "safdsaf",
+        "description": "asfdasfd a",
+        "memberList": [
+            68
         ],
         "applicationList": []
     }

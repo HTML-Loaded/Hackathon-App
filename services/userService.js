@@ -29,7 +29,7 @@ export const createUser = async (name, email, password, skills) => {
     id: users.length > 0
         ? Math.max(...users.map(user => user.id)) + 1
         : 1,
-    teamId: null,
+    teamId: 0,
     roles: "participant",
     name: name.trim(),
     email: email.toLowerCase().trim(),
