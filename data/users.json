@@ -5,11 +5,7 @@
         "profilePicture": "/images/default-profile.png",
         "name": "John Smith",
         "email": "john@example.com",
-<<<<<<< HEAD
-        "password": "$2b$10$5MPpd5AXMKOLz0i4QW02CexrX/lSc/YDaJTtobrHEUqAzLbbJtuoO",
-=======
-        "password": "$2b$10$fksrmB77wjbLlxGHERVqauBw0FpAvWU2BGEjrstd263.7xyCOXxZO",
->>>>>>> team-feature
+        "password": "$2b$10$EJNqEbwgRvb8Km/Ht6I9T.5bS9HwC89G.a7ur9IVknK8oUePKoqIe",
         "roles": [
             "participant"
         ],
@@ -25,11 +21,7 @@
         "profilePicture": "/images/default-profile.png",
         "name": "Jane Doe",
         "email": "jane@example.com",
-<<<<<<< HEAD
-        "password": "$2b$10$YmvK246NellMwRPQrFZPDOF7BymRVdUZUSIdr/KwIH1lu0hzEUZgC",
-=======
-        "password": "$2b$10$EqLpYacpZZCUcBa7JLy9WuL4CFwcH946qO91Vrrhuy3OfKMhmnNOS",
->>>>>>> team-feature
+        "password": "$2b$10$GQar3C.YKu6Pvvv/IZeFPubkYUtldAZhWSe2j0RASDPfjuQopMfHG",
         "roles": [
             "participant"
         ],
@@ -45,11 +37,7 @@
         "profilePicture": "https://media.tenor.com/QVXwXVq-1EYAAAAM/tole-tole-mei-mei.gif",
         "name": "Leo",
         "email": "leo@example.com",
-<<<<<<< HEAD
-        "password": "$2b$10$8PQB/NKu/bxFh9Vsue3tleosCZp96Gmg8J3RVzBNNcT8igqpaqzFm",
-=======
-        "password": "$2b$10$PG/H..SaEg95T4NYm.1dPufJ2jNKUaijCBF.GcifMfaVVNafRsx9K",
->>>>>>> team-feature
+        "password": "$2b$10$uh2eyUZ4MK3Rt6x7cS1aOeGgpoT8klkVNrF3tsRZOj6s72ne4Ra0e",
         "roles": [
             "participant"
         ],
@@ -68,11 +56,7 @@
         "profilePicture": "https://media1.tenor.com/m/vdPXShwp4q4AAAAd/orospu-esek-e%C5%9F%C5%9F%C5%9Fekk.gif",
         "name": "Jorge",
         "email": "jorge@example.com",
-<<<<<<< HEAD
-        "password": "$2b$10$f5GImgdTsx7qjeCV1w0gneAv4rfhDjuWz7mAZVgeGjgSEKHG2AlDO",
-=======
-        "password": "$2b$10$uqf17q55Wa3zMq/LJMS/guMF5lkpdt0xdmrgXJuh/XCIqOjbRr5k2",
->>>>>>> team-feature
+        "password": "$2b$10$Tj5xuzfw1V1aBiqHYEj.q.27vi.aHprwlYQssY/isx0D2A4BebPuy",
         "roles": [
             "participant"
         ],
@@ -91,11 +75,7 @@
         "profilePicture": "",
         "name": "Ivan",
         "email": "ivan@example.com",
-<<<<<<< HEAD
-        "password": "$2b$10$HU0irrzjIr37JR4/AYFApOXz7Z3Yn9kJzMNfbc2ySQrcGnvJOL9dK",
-=======
-        "password": "$2b$10$2wmPLBeAh.VSUdduVHdxzeammB7MftYWvozMeG2Vr9KRRyLReb.Pm",
->>>>>>> team-feature
+        "password": "$2b$10$KuGHnSIFXATL6R.zO2ydPebUnBsrux7if/ZLZl..wrbe65.IyDK2.",
         "roles": [
             "participant"
         ],
@@ -110,11 +90,7 @@
         "profilePicture": "",
         "name": "May",
         "email": "may@example.com",
-<<<<<<< HEAD
-        "password": "$2b$10$pJOsAru10DOF15q2u4rkueOIqbaOPO1mejwtEoBKgddgWmDFBavAC",
-=======
-        "password": "$2b$10$iXv8Mg705zPGWOXkMIe5/uJN5GeUbRbQYhodLFnhi8uI8NvyNpRwC",
->>>>>>> team-feature
+        "password": "$2b$10$2kn108rqrZzDLQcV0YT1MOsGUvU0hD4Smq9OLhwTIW0iRgufh0wZ.",
         "roles": [
             "participant"
         ],
@@ -126,15 +102,11 @@
     },
     {
         "id": 13,
-        "teamId": 4,
+        "teamId": 0,
         "profilePicture": "https://media.discordapp.net/attachments/746382654378737938/1570258797476450415/IMG_5392.png?ex=6af670f7&is=6af51f77&hm=5273aef692e4be42011dd53260016e5f01536b320d3a182c43a01db00b44b763&=&format=webp&quality=lossless",
         "name": "Dave",
         "email": "dave@example.com",
-<<<<<<< HEAD
-        "password": "$2b$10$iF4ImW2BdgnCxBRyulnLWOioHEs8zRCxwWwhIYQdKl89Xc/1kEF8W",
-=======
-        "password": "$2b$10$bH/iKTIaAJSIYMY5im4X2OinXNf7AwiPxhsY03Vu7U4mkMGWF3noW",
->>>>>>> team-feature
+        "password": "$2b$10$vE0/YE4CsfzkzMbi1eKV5.YZNNKGRwHRkPzXKSMfsTXzFn77RCTk2",
         "roles": [
             "participant"
         ],
@@ -149,11 +121,7 @@
         "profilePicture": "",
         "name": "Divia",
         "email": "divia@example.com",
-<<<<<<< HEAD
-        "password": "$2b$10$grzS3jFhoXjtX1WzF2NDzeNVoXTey1oV1MnA5xoyP41RdZwPZflC.",
-=======
-        "password": "$2b$10$CFOJVzr5N6DPu2Emtzlmuu1p14eGpy9Ynx7oxcmGubB6s97IK/JNi",
->>>>>>> team-feature
+        "password": "$2b$10$DBkUwNoRyChI0N03EbcSa.GJe5JtOtBlud23Y57Lu.miYZhqSty5i",
         "roles": [
             "participant"
         ],

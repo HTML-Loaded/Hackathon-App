@@ -248,8 +248,34 @@ export const seedData = async () => {
                 participantNum: 6,
                 participants: [1, 2, 3, 67, 10, 8]
             }
+        ],
+        "projects.json":    
+        [
+            {
+                "id": 1,
+                "teamId": 1,
+                "title": "RGV Community Connect",
+                "description": "A web application that connects local volunteers with nonprofit organizations and community service opportunities throughout the Rio Grande Valley.",
+                "repositoryLink": "https://github.com/example/rgv-community-connect",
+                "submissionDate": "2026-11-20T15:30:00.000Z"
+            },
+            {
+                "id": 2,
+                "teamId": 2,
+                "title": "Smart Agriculture Monitor",
+                "description": "An IoT dashboard that monitors soil moisture, temperature, and weather conditions to help local farmers improve irrigation and crop management.",
+                "repositoryLink": "https://github.com/example/smart-agriculture-monitor",
+                "submissionDate": "2026-11-20T18:45:00.000Z"
+            },
+            {
+                "id": 3,
+                "teamId": 3,
+                "title": "StudyBuddy",
+                "description": "A student collaboration platform that helps university students organize study groups, share resources, and manage academic assignments.",
+                "repositoryLink": "https://github.com/example/studybuddy",
+                "submissionDate": "2026-11-21T02:15:00.000Z"
+            }
         ]
-
 
 
     }

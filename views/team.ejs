@@ -27,21 +27,25 @@
                 
                 <div class="team-actions">
                     <% if (isMember) { %>
-                        <a href="/teams/<%= team.id %>/edit" class="team-btn">
+                        <button href="/teams/<%= team.id %>/edit" class="team-btn">
                             Edit Team
-                        </a>
-
+                        </button>
                     <% } else if (hasApplied) { %>
                         <button class="team-btn" disabled>
                             Applied
                         </button>
-
                     <% } else if (currentUser && currentUser.teamId === 0) { %>
                         <form action="/teams/<%= team.id %>/apply" method="POST">
                             <button type="submit" class="team-btn">
                                 Apply to Team
                             </button>
                         </form>
+                    <% } %>
+
+                    <% if (currentUser && currentUser.teamId === team.id) { %>
+                                <a href="/projects" class="project-link team-btn">
+                            View / Submit Project
+                        </a>
                     <% } %>
                 </div>
 

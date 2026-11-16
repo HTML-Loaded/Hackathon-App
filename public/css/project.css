@@ -1,0 +1,85 @@
+
+.project-page {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+.project-page h1 {
+    margin-bottom: 30px;
+}
+
+.submitted-project,
+.project-form-section {
+    background: #E6E3DA;
+    border: 1px solid #b6aca0;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.submitted-project h2,
+.project-form-section h2 {
+    color: #7C3E2E;
+    margin-bottom: 20px;
+}
+
+.submitted-project p {
+    margin: 12px 0;
+    overflow-wrap: anywhere;
+}
+
+.project-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-form > div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.project-form label {
+    font-weight: bold;
+}
+
+.project-form input,
+.project-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #b6aca0;
+    border-radius: 6px;
+    background: #D2D2C8;
+    color: #212A31;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+.project-form textarea {
+    resize: vertical;
+}
+
+.project-form button {
+    align-self: flex-start;
+    padding: 12px 24px;
+    background: #7C3E2E;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.project-form button:hover {
+    background: #69532C;
+}
+
+.back-to-team {
+    display: inline-block;
+    margin-top: 10px;
+    color: #7C3E2E;
+    font-weight: bold;
+    text-decoration: none;
+}
