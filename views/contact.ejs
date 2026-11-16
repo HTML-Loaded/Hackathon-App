@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | RGV Hackathon</title>
+
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/partials.css">
+    <link rel="stylesheet" href="/css/info.css">
+</head>
+<body>
+    <%- include("./partials/navbar.ejs") %>
+
+    <main class="info-page">
+        <section class="info-header">
+            <h1>Contact Us</h1>
+            <p>
+                Have questions about RGV Hackathon?
+                Learn how to get in touch with our team.
+            </p>
+        </section>
+
+        <section class="contact-section">
+            <div class="contact-details">
+                <h2>General Information</h2>
+
+                <p>
+                    RGV Hackathon brings together students,
+                    developers, and technology enthusiasts
+                    from across the Rio Grande Valley.
+                </p>
+
+                <h3>Event Dates</h3>
+                <p>November 19–21, 2026</p>
+
+                <h3>Questions and Support</h3>
+                <p>
+                    For questions about registration, teams,
+                    projects, or event activities, please
+                    refer to our Frequently Asked Questions.
+                </p>
+
+                <a href="/faq" class="info-button">
+                    View FAQ
+                </a>
+            </div>
+
+            <div class="contact-details">
+                <h2>Get Involved</h2>
+
+                <h3>Participants</h3>
+                <p>
+                    Interested in participating?
+                    Explore our scheduled events and
+                    register for the hackathon.
+                </p>
+
+                <h3>Sponsors</h3>
+                <p>
+                    Help support local developers,
+                    student innovation, and technology
+                    education through sponsorship.
+                </p>
+
+                <h3>Workshops</h3>
+                <p>
+                    Interested in sharing your knowledge?
+                    RGV Hackathon welcomes workshops
+                    and educational activities.
+                </p>
+
+                <a href="/events" class="info-button">
+                    View Events
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <%- include("./partials/footer.ejs") %>
+</body>
+</html>

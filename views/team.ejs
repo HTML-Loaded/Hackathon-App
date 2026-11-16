@@ -27,9 +27,9 @@
                 
                 <div class="team-actions">
                     <% if (isMember) { %>
-                        <button href="/teams/<%= team.id %>/edit" class="team-btn">
+                        <a href="/teams/<%= team.id %>/edit" class="team-btn">
                             Edit Team
-                        </button>
+                        </a>
                     <% } else if (hasApplied) { %>
                         <button class="team-btn" disabled>
                             Applied

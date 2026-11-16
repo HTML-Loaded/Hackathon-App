@@ -33,9 +33,10 @@ p {
 }
 a {
     color: #7C3E2E;
+    transition: background-color .2s ease, transform .2s ease;
 }
 a:hover {
-    color: #69532C;
+    transform: translateY(-2px);
 }
 button, input, textarea {
     font: inherit;
